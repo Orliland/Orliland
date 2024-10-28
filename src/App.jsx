@@ -1,5 +1,11 @@
+import NavBar from "./layout/Navbar";
+
 function App() {
-  return <div>hi </div>;
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 }
 
 export default App;
