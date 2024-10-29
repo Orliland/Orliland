@@ -1,7 +1,7 @@
 import Carousel from "./layout/Carousel";
 import ContactCard from "./layout/ContactCard";
 import Hero from "./layout/Hero";
-import NavBar from "./layout/Navbar";
+import NavBar from "./layout/NavBar";
 
 function App() {
   return (
