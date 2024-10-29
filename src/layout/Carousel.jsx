@@ -14,6 +14,7 @@ const Carousel = () => {
   const [order, setOrder] = useState(
     Array.from({ length: projects.length }, (v, i) => i),
   );
+  const [animation, setAnimation] = useState(false);
 
   const handleCarousel = (action) => {
     switch (action) {
@@ -22,6 +23,7 @@ const Carousel = () => {
           ...order.slice(1, order.length),
           ...order.slice(0, 1),
         ];
+        setAnimation("animate-fade-in-right");
         setOrder(newOrder);
 
         break;
@@ -32,6 +34,8 @@ const Carousel = () => {
 
           ...order.slice(0, order.length - 1),
         ];
+
+        setAnimation("animate-fade-in-left");
         setOrder(newOrder);
         break;
       }
@@ -55,13 +59,25 @@ const Carousel = () => {
               key={project.id}
               image={project.thumbnail}
               order={order[index]}
+              animation={animation}
+              setAnimation={setAnimation}
             />
           );
         })}
       </div>
       <div className="flex gap-4">
-        <ButtonRounded type="left" onClick={() => handleCarousel("previous")} />
-        <ButtonRounded type="right" onClick={() => handleCarousel("next")} />
+        <ButtonRounded
+          type="left"
+          onClick={() => {
+            handleCarousel("previous");
+          }}
+        />
+        <ButtonRounded
+          type="right"
+          onClick={() => {
+            handleCarousel("next");
+          }}
+        />
       </div>
     </section>
   );
