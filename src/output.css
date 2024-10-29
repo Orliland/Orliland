@@ -676,6 +676,10 @@ video {
   gap: 15px;
 }
 
+.gap-\[100px\] {
+  gap: 100px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -829,6 +833,10 @@ video {
     gap: 26px;
   }
 
+  .md\:gap-\[120px\] {
+    gap: 120px;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -893,6 +901,10 @@ video {
     margin-bottom: 88px;
   }
 
+  .lg\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .lg\:w-9\/12 {
     width: 75%;
   }
@@ -907,6 +919,10 @@ video {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-\[88px\] {
+    gap: 88px;
   }
 
   .lg\:p-20 {
