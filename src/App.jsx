@@ -3,7 +3,9 @@ import NavBar from "./layout/Navbar";
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar className="header" />
+
+      <NavBar className='footer'/>
     </>
   );
 }
