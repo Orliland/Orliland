@@ -39,8 +39,7 @@ const Carousel = () => {
   };
 
   return (
-    // TODO: add styles for tablet and desktop
-    <section className="my-[100px] flex flex-col items-center gap-8 overflow-hidden md:gap-14">
+    <section className="my-[100px] flex flex-col items-center gap-8 overflow-hidden md:my-[120px] md:gap-14 lg:my-[88px]">
       <h2 className="text-2xl font-bold">My Work</h2>
       <div
         className="grid grid-rows-1 gap-[15px]"
@@ -61,7 +60,6 @@ const Carousel = () => {
         })}
       </div>
       <div className="flex gap-4">
-        {/* TODO: add onClick handler */}
         <ButtonRounded type="left" onClick={() => handleCarousel("previous")} />
         <ButtonRounded type="right" onClick={() => handleCarousel("next")} />
       </div>
