@@ -1,4 +1,4 @@
-const Button = ({ className = "default" }) => {
+export default function Button({ className = "default" }) {
   return (
     // TODO: add styles for tablet and desktop
     <button
@@ -7,6 +7,22 @@ const Button = ({ className = "default" }) => {
       Free Consultation
     </button>
   );
-};
+}
 
-export default Button;
+import LeftArrow from "../assets/icon-arrow-left.svg";
+import RightArrow from "../assets/icon-arrow-right.svg";
+
+export const ButtonRounded = ({ type, onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      className="grid h-16 w-16 place-items-center rounded-full bg-black hover:bg-purple"
+    >
+      <img
+        className="h-4 w-auto"
+        src={type === "left" ? LeftArrow : RightArrow}
+        alt={type === "left" ? "Previous project" : "Next project"}
+      />
+    </button>
+  );
+};
