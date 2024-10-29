@@ -1,7 +1,8 @@
 const Button = ({ className = "default" }) => {
   return (
-    // TODO: add styles for secondary modifier
-    <button className="rounded-full bg-black text-white font-bold py-2 px-7 text-sm">
+    <button
+      className={`rounded-full px-7 py-2 text-sm font-bold text-white ${className === "default" ? "bg-black hover:bg-purple" : ""} ${className === "secondary" ? "bg-red hover:bg-orange" : ""}`}
+    >
       Free Consultation
     </button>
   );

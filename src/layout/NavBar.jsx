@@ -2,16 +2,13 @@ import Logo from "../assets/logo.svg";
 
 import Button from "../components/Button";
 
-const NavBar = ({ className }) => {
+const NavBar = ({ className = "header" }) => {
   return (
     <nav
-      className={`
-        ${className === "header" && "sticky top-0 backdrop-blur-sm bg-light-cream/60 p-4 md:py-[34px] md:px-10 lg:px-0"}
-        ${className === 'footer' && 'px-4 pt-10 pb-8 md:px-10 md:py-14 lg:px-0 lg:pt-14 lg:pb-16'}
-        `}
+      className={` ${className === "header" ? "sticky top-0 p-4 backdrop-blur-sm md:px-10 md:py-[34px] lg:px-0" : ""} ${className === "footer" ? "px-4 pb-8 pt-10 md:px-10 md:py-14 lg:px-0 lg:pb-16 lg:pt-14" : ""} `}
     >
-      <div className="flex justify-between lg:w-9/12 lg:mx-auto ">
-        <img src={Logo} alt="logo" className="w-12 h-12" />
+      <div className="flex justify-between lg:mx-auto lg:w-9/12">
+        <img src={Logo} alt="logo" className="h-12 w-12" />
 
         <Button />
       </div>
