@@ -1,5 +1,6 @@
 import Carousel from "./layout/Carousel";
 import ContactCard from "./layout/ContactCard";
+import Features from "./layout/Features";
 import Hero from "./layout/Hero";
 import NavBar from "./layout/NavBar";
 
@@ -8,6 +9,7 @@ function App() {
     <div className="bg-light-cream">
       <NavBar className="header" />
       <main className="flex flex-col gap-[100px] md:gap-[120px] lg:gap-[88px]">
+        <Features />
         <Hero />
         <Carousel />
         <ContactCard />
