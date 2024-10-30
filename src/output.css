@@ -1065,6 +1065,10 @@ video {
     gap: 27px;
   }
 
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
@@ -1223,6 +1227,10 @@ video {
 
   .lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
   }
 
   .lg\:p-20 {
