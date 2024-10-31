@@ -10,7 +10,9 @@ const NavBar = ({ className = "header" }) => {
       <div className="flex items-center justify-between lg:mx-auto lg:w-9/12">
         <span className="text-xl font-extrabold">Orlando Verd&iacute;n</span>
 
-        <Button />
+        <Button action="/Orlando_Verdin-Frontend_Developer.pdf">
+          Download CV
+        </Button>
       </div>
     </nav>
   );
