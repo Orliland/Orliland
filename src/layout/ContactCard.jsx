@@ -13,7 +13,9 @@ const ContactCard = () => {
           can move forward from there.
         </p>
       </div>
-      <Button className="secondary" />
+      <Button className="secondary" action="mailto:hello@orli.land">
+        Contact me
+      </Button>
     </section>
   );
 };
