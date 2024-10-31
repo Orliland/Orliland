@@ -632,6 +632,10 @@ video {
   height: 1rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -642,6 +646,10 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .max-w-\[540px\] {
