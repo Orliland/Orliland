@@ -19,7 +19,7 @@ const Hero = () => {
           I’m also handy with a camera!
         </p>
         <Button className="secondary" action="mailto:hello@orli.land">
-          Send a email
+          Contact me
         </Button>
       </div>
     </section>

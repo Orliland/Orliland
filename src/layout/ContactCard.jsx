@@ -14,7 +14,7 @@ const ContactCard = () => {
         </p>
       </div>
       <Button className="secondary" action="mailto:hello@orli.land">
-        Send a email
+        Contact me
       </Button>
     </section>
   );
