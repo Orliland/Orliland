@@ -18,7 +18,9 @@ const Hero = () => {
           designed everything from brand illustrations to complete mobile apps.
           I’m also handy with a camera!
         </p>
-        <Button className="secondary" />
+        <Button className="secondary" action="mailto:hello@orli.land">
+          Send a email
+        </Button>
       </div>
     </section>
   );
