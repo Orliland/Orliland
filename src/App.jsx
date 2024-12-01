@@ -9,9 +9,9 @@ function App() {
     <div className="bg-light-cream">
       <NavBar className="header" />
       <main className="flex flex-col gap-[100px] md:gap-[120px] lg:gap-[88px]">
-        <Features />
         <Hero />
         <Carousel />
+        <Features />
         <ContactCard />
       </main>
       <NavBar className="footer" />
