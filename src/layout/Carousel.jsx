@@ -44,7 +44,13 @@ const Carousel = () => {
 
   return (
     <section className="flex flex-col items-center gap-8 overflow-hidden md:gap-14">
-      <h2 className="text-2xl font-bold">My Work</h2>
+      <h2 className="flex items-center gap-5 py-4 text-2xl font-bold">
+        My Work
+        <span className="relative flex h-3 w-3">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-black/80 opacity-75"></span>
+          <span className="relative inline-flex h-3 w-3 rounded-full bg-black"></span>
+        </span>
+      </h2>
       <div
         className="grid grid-rows-1 gap-[15px]"
         style={{

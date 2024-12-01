@@ -554,6 +554,14 @@ video {
   display: none;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -620,6 +628,10 @@ video {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .grid {
   display: grid;
 }
@@ -628,16 +640,24 @@ video {
   height: 4rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-4 {
   height: 1rem;
 }
 
-.h-12 {
-  height: 3rem;
+.h-full {
+  height: 100%;
 }
 
 .w-16 {
   width: 4rem;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .w-\[72vw\] {
@@ -648,8 +668,12 @@ video {
   width: auto;
 }
 
-.w-12 {
-  width: 3rem;
+.w-full {
+  width: 100%;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .max-w-\[540px\] {
@@ -692,6 +716,17 @@ video {
 
 .animate-fade-in-right {
   animation: fade-in-right 1s ease-in-out;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .grid-cols-2 {
@@ -750,6 +785,10 @@ video {
   gap: 94px;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -806,6 +845,27 @@ video {
   background-color: rgb(235 117 101 / var(--tw-bg-opacity));
 }
 
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(122 116 110 / var(--tw-bg-opacity));
+}
+
+.bg-black\/50 {
+  background-color: rgb(3 3 3 / 0.5);
+}
+
+.bg-black\/30 {
+  background-color: rgb(3 3 3 / 0.3);
+}
+
+.bg-black\/60 {
+  background-color: rgb(3 3 3 / 0.6);
+}
+
+.bg-black\/80 {
+  background-color: rgb(3 3 3 / 0.8);
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -849,6 +909,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -859,6 +924,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -926,6 +995,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .backdrop-blur-md {
