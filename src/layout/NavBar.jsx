@@ -15,13 +15,18 @@ const NavBar = ({ className = "header" }) => {
           Orlando Verd&iacute;n
         </span>
         <ul className="flex items-center gap-3">
+          <li>
+            <Button action="/Orlando_Verdin-Frontend_Developer.pdf">
+              Download CV
+            </Button>
+          </li>
           <SocialLink
             link="https://github.com/Orliland"
             icon={GithubIcon}
             alt="Visit my GitHub profile"
           />
           <SocialLink
-            link="https://linkedin/in/Orliland"
+            link="https://linkedin.com/in/Orliland"
             icon={LinkedinIcon}
             alt="Visit my LinkedIn profile"
           />
@@ -30,11 +35,6 @@ const NavBar = ({ className = "header" }) => {
             icon={ThreadsIcon}
             alt="Visit my Threads profile"
           />
-          <li>
-            <Button action="/Orlando_Verdin-Frontend_Developer.pdf">
-              Download CV
-            </Button>
-          </li>
         </ul>
       </div>
     </nav>
