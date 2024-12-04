@@ -8,7 +8,7 @@ import ThreadsIcon from "../assets/threads.svg";
 const NavBar = ({ className = "header" }) => {
   return (
     <nav
-      className={` ${className === "header" ? "sticky top-0 z-10 p-4 backdrop-blur-md md:px-10 md:py-[34px] lg:px-0" : ""} ${className === "footer" ? "px-4 pb-8 pt-10 md:px-10 md:py-14 lg:px-0 lg:pb-16 lg:pt-14" : ""} `}
+      className={` ${className === "header" ? "p-4 md:px-10 md:py-[34px] lg:px-0" : ""} ${className === "footer" ? "px-4 pb-8 pt-10 md:px-10 md:py-14 lg:px-0 lg:pb-16 lg:pt-14" : ""} `}
     >
       <div className="flex items-center justify-between lg:mx-auto lg:w-9/12">
         <span className="cursor-default text-xl font-extrabold">
@@ -17,7 +17,7 @@ const NavBar = ({ className = "header" }) => {
         <ul className="flex items-center gap-3">
           <li>
             <Button action="/Orlando_Verdin-Frontend_Developer.pdf">
-              Download CV
+              My CV
             </Button>
           </li>
           <SocialLink

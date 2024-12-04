@@ -21,13 +21,18 @@ export default {
       animation: {
         "fade-in-left": "fade-in-left 1s ease-in-out",
         "fade-in-right": "fade-in-right 1s ease-in-out",
+        "fade-body": "fade-body 1s ease-in-out",
       },
       keyframes: {
+        
+        },
         "fade-in-left": {
           "0%": {
+            opacity: "0.9",
             transform: "translateX(100%)",
           },
           "100%": {
+            opacity: "1",
             transform: "translateX(0)",
           },
         },

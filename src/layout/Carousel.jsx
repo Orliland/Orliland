@@ -2,18 +2,13 @@ import { useState } from "react";
 import { ButtonRounded } from "../components/Button";
 import ProjectCard from "../components/ProjectCard";
 
-const projects = [
-  { id: 1, thumbnail: "/images/image-slide-1.jpg" },
-  { id: 2, thumbnail: "/images/image-slide-2.jpg" },
-  { id: 3, thumbnail: "/images/image-slide-3.jpg" },
-  { id: 4, thumbnail: "/images/image-slide-4.jpg" },
-  { id: 5, thumbnail: "/images/image-slide-5.jpg" },
-];
+import projects from "../utils/projects";
 
 const Carousel = () => {
   const [order, setOrder] = useState(
     Array.from({ length: projects.length }, (v, i) => i),
   );
+  const middleElement = Math.ceil(projects.length / 2) - 1;
   const [animation, setAnimation] = useState(false);
 
   const handleCarousel = (action) => {
@@ -43,30 +38,29 @@ const Carousel = () => {
   };
 
   return (
-    <section className="flex flex-col items-center gap-8 overflow-hidden md:gap-14">
+    <section className="mt-10 flex flex-col items-center gap-6 overflow-hidden md:gap-10">
       <h2 className="flex items-center gap-5 py-4 text-2xl font-bold">
         My Work
-        <span className="relative flex h-3 w-3">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-black/80 opacity-75"></span>
-          <span className="relative inline-flex h-3 w-3 rounded-full bg-black"></span>
-        </span>
       </h2>
+
+      {/* TODO: add documentation to a better understanding of the code down */}
       <div
-        className="grid grid-rows-1 gap-[15px]"
+        className="grid grid-rows-1 items-center gap-[15px]"
         style={{
           width: `calc((${projects.length} * 72vw) + ((${projects.length} - 1) * 15px))`,
           gridTemplateColumns: `repeat(${projects.length}, auto)`,
-          maxWidth: `calc((${projects.length} * 540px) + ((${projects.length} - 1) * 15px))`,
+          maxWidth: `calc((${projects.length} * 450px) + ((${projects.length} - 1) * 15px))`,
         }}
       >
         {projects.map((project, index) => {
           return (
             <ProjectCard
               key={project.id}
-              image={project.thumbnail}
+              data={project}
               order={order[index]}
               animation={animation}
               setAnimation={setAnimation}
+              middleElement={middleElement}
             />
           );
         })}
