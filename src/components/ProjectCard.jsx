@@ -12,7 +12,7 @@ const ProjectCard = ({
     // TODO: fixing problem with dinamic classes
 
     <div
-      className={`${animation && animation} w-[72vw] max-w-[450px] rounded-[10px]`}
+      className={`${animation && animation} ${!animation && "shadow-xl"} w-[72vw] max-w-[450px] overflow-hidden rounded-[10px]`}
       style={{ order: order + 1 }}
       onAnimationEnd={() => {
         setAnimation(false);
@@ -26,12 +26,12 @@ const ProjectCard = ({
 
       <div className="relative">
         <div
-          className={`${middleElement != order && "hidden"} ${animation && "animate-fade-body relative"} z-[-1] rounded-b-[10px] bg-white p-5 shadow-xl`}
+          className={`${middleElement != order && "hidden"} ${animation && "animate-fade-body relative"} z-[-1] rounded-b-[10px] bg-white p-5`}
         >
           <h3 className="text-lg font-bold">
             Project Title {middleElement} {order}
           </h3>
-          <p>
+          <p className="my-3">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim culpa
             earum beatae non ducimus fugiat. Obcaecati, voluptatibus iste neque
             esse laboriosam recusandae consectetur saepe ex consequatur iure
