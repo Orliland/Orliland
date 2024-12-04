@@ -37,7 +37,7 @@ const ProjectCard = ({
             esse laboriosam recusandae consectetur saepe ex consequatur iure
             dolor at eveniet?
           </p>
-          <div className="mt-5 flex justify-center gap-4">
+          <div className="flex justify-center gap-4">
             <Button action="#">Code</Button>
             <Button action="#">Live view</Button>
           </div>

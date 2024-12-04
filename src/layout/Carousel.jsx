@@ -44,7 +44,7 @@ const Carousel = () => {
   };
 
   return (
-    <section className="flex flex-col items-center gap-8 overflow-hidden md:gap-14">
+    <section className="flex flex-col items-center gap-6 overflow-hidden md:gap-10">
       <h2 className="flex items-center gap-5 py-4 text-2xl font-bold">
         My Work
         <span className="relative flex h-3 w-3">
