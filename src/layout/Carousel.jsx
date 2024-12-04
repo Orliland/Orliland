@@ -14,6 +14,7 @@ const Carousel = () => {
   const [order, setOrder] = useState(
     Array.from({ length: projects.length }, (v, i) => i),
   );
+  const middleElement = Math.ceil(projects.length / 2) - 1;
   const [animation, setAnimation] = useState(false);
 
   const handleCarousel = (action) => {
@@ -54,7 +55,7 @@ const Carousel = () => {
 
       {/* TODO: add documentation to a better understanding of the code down */}
       <div
-        className="grid grid-rows-1 gap-[15px]"
+        className="grid grid-rows-1 items-start gap-[15px]"
         style={{
           width: `calc((${projects.length} * 72vw) + ((${projects.length} - 1) * 15px))`,
           gridTemplateColumns: `repeat(${projects.length}, auto)`,
@@ -69,6 +70,7 @@ const Carousel = () => {
               order={order[index]}
               animation={animation}
               setAnimation={setAnimation}
+              middleElement={middleElement}
             />
           );
         })}
