@@ -51,12 +51,14 @@ const Carousel = () => {
           <span className="relative inline-flex h-3 w-3 rounded-full bg-black"></span>
         </span>
       </h2>
+
+      {/* TODO: add documentation to a better understanding of the code down */}
       <div
         className="grid grid-rows-1 gap-[15px]"
         style={{
           width: `calc((${projects.length} * 72vw) + ((${projects.length} - 1) * 15px))`,
           gridTemplateColumns: `repeat(${projects.length}, auto)`,
-          maxWidth: `calc((${projects.length} * 540px) + ((${projects.length} - 1) * 15px))`,
+          maxWidth: `calc((${projects.length} * 450px) + ((${projects.length} - 1) * 15px))`,
         }}
       >
         {projects.map((project, index) => {
