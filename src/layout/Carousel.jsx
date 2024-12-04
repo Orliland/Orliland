@@ -2,13 +2,7 @@ import { useState } from "react";
 import { ButtonRounded } from "../components/Button";
 import ProjectCard from "../components/ProjectCard";
 
-const projects = [
-  { id: 1, thumbnail: "/images/image-slide-1.jpg" },
-  { id: 2, thumbnail: "/images/image-slide-2.jpg" },
-  { id: 3, thumbnail: "/images/image-slide-3.jpg" },
-  { id: 4, thumbnail: "/images/image-slide-4.jpg" },
-  { id: 5, thumbnail: "/images/image-slide-5.jpg" },
-];
+import projects from "../utils/projects";
 
 const Carousel = () => {
   const [order, setOrder] = useState(
@@ -51,7 +45,7 @@ const Carousel = () => {
 
       {/* TODO: add documentation to a better understanding of the code down */}
       <div
-        className="grid grid-rows-1 items-start gap-[15px]"
+        className="grid grid-rows-1 items-center gap-[15px]"
         style={{
           width: `calc((${projects.length} * 72vw) + ((${projects.length} - 1) * 15px))`,
           gridTemplateColumns: `repeat(${projects.length}, auto)`,
@@ -62,7 +56,7 @@ const Carousel = () => {
           return (
             <ProjectCard
               key={project.id}
-              image={project.thumbnail}
+              data={project}
               order={order[index]}
               animation={animation}
               setAnimation={setAnimation}

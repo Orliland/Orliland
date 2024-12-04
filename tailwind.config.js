@@ -24,15 +24,7 @@ export default {
         "fade-body": "fade-body 1s ease-in-out",
       },
       keyframes: {
-        "fade-body": {
-          "0%": {
-            opacity: "0",
-            top: "-100%",
-          },
-          "100%": {
-            opacity: "1",
-            top: "0",
-          },
+        
         },
         "fade-in-left": {
           "0%": {
