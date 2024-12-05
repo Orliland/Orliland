@@ -1,47 +1,47 @@
 import Card from "../components/Card";
 
-import AppsIcon from "../assets/pattern-apps.svg";
-import GraphicDesignIcon from "../assets/pattern-graphic-design.svg";
-import IllustrationsIcon from "../assets/pattern-illustrations.svg";
-import MotionGraphicsIcon from "../assets/pattern-motion-graphics.svg";
-import PhotographyIcon from "../assets/pattern-photography.svg";
-import UiUxIcon from "../assets/pattern-ui-ux.svg";
+import ReactIcon from "../assets/react.svg";
+import NextIcon from "../assets/nextjs.png";
+import TypescriptIcon from "../assets/typescript.svg";
+import TailwindIcon from "../assets/tailwind.svg";
+import NodeIcon from "../assets/node.svg";
+import PythonIcon from "../assets/python.svg";
 
 const Bento = () => {
   return (
-    <div className="grid grid-cols-2 items-start gap-6 md:grid-cols-4 lg:grid-cols-6 lg:grid-rows-2">
+    <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6 lg:grid-rows-2">
       <Card
-        className="col-span-full gap-[94px] bg-purple md:col-span-2 md:row-span-2"
-        icon={GraphicDesignIcon}
+        className="bg-slate-900 col-span-full gap-[94px] md:col-span-2 md:row-span-2"
+        icon={ReactIcon}
       >
-        Graphic Design
+        React JS
+      </Card>
+      <Card className="bg-next col-span-1 gap-10 md:row-span-1" icon={NextIcon}>
+        Next .JS
       </Card>
       <Card
-        className="col-span-1 gap-10 bg-orange md:row-span-1"
-        icon={UiUxIcon}
+        className="bg-typescript col-span-1 gap-10 md:row-span-1"
+        icon={TypescriptIcon}
       >
-        UI/UX
-      </Card>
-      <Card className="col-span-1 gap-10 bg-pink md:row-span-1" icon={AppsIcon}>
-        Apps
+        TypeScript
       </Card>
       <Card
-        className="col-span-full gap-4 bg-red md:col-span-2 lg:order-4"
-        icon={IllustrationsIcon}
+        className="bg-node col-span-full gap-4 md:col-span-2 lg:order-4"
+        icon={NodeIcon}
       >
-        Illustrations
+        Node
       </Card>
       <Card
-        className="col-span-full gap-10 bg-green md:col-span-2 lg:order-3"
-        icon={PhotographyIcon}
+        className="bg-python col-span-full gap-10 md:col-span-2 lg:order-3"
+        icon={PythonIcon}
       >
-        Photography
+        Python & Flask
       </Card>
       <Card
-        className="col-span-full gap-10 bg-magenta md:col-span-2 lg:order-5 lg:gap-4"
-        icon={MotionGraphicsIcon}
+        className="bg-slate-900 col-span-full gap-10 md:col-span-2 lg:order-5 lg:gap-4"
+        icon={TailwindIcon}
       >
-        Motion Graphics
+        TailwindCSS
       </Card>
     </div>
   );
