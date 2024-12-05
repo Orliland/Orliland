@@ -23,7 +23,7 @@ const Bento = () => {
         className="bg-typescript col-span-1 gap-10 md:row-span-1"
         icon={TypescriptIcon}
       >
-        TypeScript
+        Type Script
       </Card>
       <Card
         className="bg-node col-span-full gap-4 md:col-span-2 lg:order-4"
