@@ -20,16 +20,16 @@ const Bento = () => {
         Next .JS
       </Card>
       <Card
-        className="bg-typescript col-span-1 gap-10 md:row-span-1"
-        icon={TypescriptIcon}
-      >
-        Type Script
-      </Card>
-      <Card
-        className="bg-node col-span-full gap-4 md:col-span-2 lg:order-4"
+        className="bg-node col-span-1 flex gap-10 md:row-span-1"
         icon={NodeIcon}
       >
         Node
+      </Card>
+      <Card
+        className="bg-typescript col-span-full gap-4 md:col-span-2 lg:order-4"
+        icon={TypescriptIcon}
+      >
+        TypeScript
       </Card>
       <Card
         className="bg-python col-span-full gap-10 md:col-span-2 lg:order-3"
