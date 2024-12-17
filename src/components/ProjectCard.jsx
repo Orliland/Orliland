@@ -28,7 +28,10 @@ const ProjectCard = ({
         className={`${middleElement != order && "hidden"} z-[-1] rounded-b-[10px] bg-white p-5`}
       >
         <h3 className="text-lg font-bold">{data.title}</h3>
-        <p className="my-3">{data.description}</p>
+        <p
+          className="my-3"
+          dangerouslySetInnerHTML={{ __html: data.description }}
+        ></p>
         <div className="flex justify-center gap-4">
           <Button action={data.repository}>Code</Button>
           <Button action={data.live}>Live view</Button>
