@@ -11,12 +11,12 @@ const Hero = () => {
       </picture>
       <div className="flex flex-col items-center gap-6 text-center md:items-start md:text-left lg:gap-8">
         <h2 className="text-[26px] font-bold md:text-[32px] lg:text-[40px]">
-          I’m Amy, and I’d love to work on your next project
+          Hi! I’m Orlando, and I’d love to bring your next project to life
         </h2>
         <p className="text-base font-medium text-gray md:text-[18px] lg:mt-[2px]">
-          I love working with others to create beautiful design solutions. I’ve
-          designed everything from brand illustrations to complete mobile apps.
-          I’m also handy with a camera!
+          As a frontend developer, I love crafting attractive and functional web
+          interfaces, paying attention to every detail to deliver unique user
+          experiences.
         </p>
         <Button className="secondary" action="mailto:hello@orli.land">
           Contact me
