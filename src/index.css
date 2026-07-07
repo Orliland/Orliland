@@ -1,0 +1,128 @@
+:root {
+  font-size: 62.5%;
+  font-family: "Figtree Variable", sans-serif;
+
+  /* Colors */
+  --white: #ffffff;
+  --violet-glow: #3c31e9;
+  --background: #e5e7e9;
+  --texts: #222222;
+  --section-border: #22222233;
+  --section-background1-top: #ffffff;
+  --section-background1-bottom: #e6e8ea;
+  --section-background2-top: #ffffff;
+  --section-background2-bottom: #ffffff;
+  --block-background1: #d8e3fc;
+  --block-background2: #ffffff;
+  --block-border: #ffffff;
+  --button-hover-background: #222222;
+  --button-hover-text: #ffffff;
+  --nav-link-background-hover: #d8e3fc;
+  --nav-link-text-hover: #000000;
+  --nav-link-background: #d8e3fc;
+}
+
+.link {
+  color: var(--white);
+}
+
+.link--dark {
+  color: var(--texts);
+}
+
+.link--light {
+  color: var(--texts);
+}
+
+/* Fonts */
+.heading1 {
+  font-weight: 500;
+
+  color: var(--texts);
+  font-size: 4.8rem;
+  letter-spacing: -0.05em;
+  line-height: 100%;
+}
+
+.heading1--big {
+  font-weight: 300;
+
+  color: var(--texts);
+  font-size: 11rem;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+}
+
+.heading2 {
+  font-weight: 500;
+
+  color: var(--texts);
+  font-size: 3.4rem;
+  letter-spacing: -0.02em;
+  line-height: 130%;
+}
+
+.heading2--small {
+  font-weight: 500;
+
+  color: var(--texts);
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+  line-height: 130%;
+}
+
+.heading3 {
+  font-weight: 900;
+
+  color: var(--texts);
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  line-height: 130%;
+}
+
+.body {
+  font-weight: 300;
+
+  color: var(--texts);
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  line-height: 140%;
+}
+
+.body--big {
+  font-weight: 300;
+
+  color: var(--texts);
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+  line-height: 130%;
+}
+
+.body--small {
+  font-weight: 300;
+
+  color: var(--texts);
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  line-height: 130%;
+}
+
+/* TODO: check if this style required italics */
+.quotes {
+  font-weight: 500;
+
+  color: var(--texts);
+  font-size: 3.4rem;
+  letter-spacing: -0.02em;
+  line-height: 130%;
+}
+
+/* TODO: check if paragraph from Framer is required here */
+.subtitle {
+  font-weight: 700;
+
+  color: var(--texts);
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  line-height: 130%;
+}
