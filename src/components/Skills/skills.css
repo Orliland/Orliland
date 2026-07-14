@@ -1,0 +1,11 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill {
+  background-color: var(--background);
+  border-radius: 3rem;
+  padding: 0.4rem 1rem;
+}
