@@ -38,7 +38,7 @@
 
 /* Fonts */
 .heading1 {
-  font-weight: 500;
+  font-weight: 300;
 
   color: var(--texts);
   font-size: 4.8rem;
@@ -47,7 +47,7 @@
 }
 
 .heading1--big {
-  font-weight: 300;
+  font-weight: 200;
 
   color: var(--texts);
   font-size: 11rem;
@@ -56,7 +56,7 @@
 }
 
 .heading2 {
-  font-weight: 500;
+  font-weight: 300;
 
   color: var(--texts);
   font-size: 3.4rem;
@@ -65,7 +65,7 @@
 }
 
 .heading2--small {
-  font-weight: 500;
+  font-weight: 300;
 
   color: var(--texts);
   font-size: 2.4rem;
@@ -74,7 +74,7 @@
 }
 
 .heading3 {
-  font-weight: 900;
+  font-weight: 500;
 
   color: var(--texts);
   font-size: 2.2rem;
@@ -83,7 +83,7 @@
 }
 
 .body {
-  font-weight: 300;
+  font-weight: 200;
 
   color: var(--texts);
   font-size: 1.6rem;
@@ -92,7 +92,7 @@
 }
 
 .body--big {
-  font-weight: 300;
+  font-weight: 200;
 
   color: var(--texts);
   font-size: 1.8rem;
@@ -101,7 +101,7 @@
 }
 
 .body--small {
-  font-weight: 300;
+  font-weight: 200;
 
   color: var(--texts);
   font-size: 1.4rem;
@@ -111,7 +111,7 @@
 
 /* TODO: check if this style required italics */
 .quotes {
-  font-weight: 500;
+  font-weight: 300;
 
   color: var(--texts);
   font-size: 3.4rem;
