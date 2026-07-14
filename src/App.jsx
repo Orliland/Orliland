@@ -1,7 +1,15 @@
 import "./App.css";
 
+import Hero from "./layout/Hero";
+
 function App() {
-  return <h1>Orlando Verdin</h1>;
+  return (
+    <main className="app">
+      <div className="app--wrapper">
+        <Hero />
+      </div>
+    </main>
+  );
 }
 
 export default App;

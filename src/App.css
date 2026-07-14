@@ -1,0 +1,15 @@
+.app {
+  padding: 1rem;
+}
+
+.app--wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 2rem;
+  background-color: var(--section-background2-bottom);
+  border: 0.1rem solid var(--section-border);
+  border-radius: 2rem;
+}

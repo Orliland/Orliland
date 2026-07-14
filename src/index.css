@@ -20,6 +20,8 @@
   --nav-link-background-hover: #d8e3fc;
   --nav-link-text-hover: #000000;
   --nav-link-background: #d8e3fc;
+
+  background-color: var(--background);
 }
 
 .link {
@@ -119,7 +121,7 @@
 
 /* TODO: check if paragraph from Framer is required here */
 .subtitle {
-  font-weight: 700;
+  font-weight: 400;
 
   color: var(--texts);
   font-size: 1.6rem;
