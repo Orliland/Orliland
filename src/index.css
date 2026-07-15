@@ -92,8 +92,6 @@
 }
 
 .body--big {
-  font-weight: 200;
-
   color: var(--texts);
   font-size: 1.8rem;
   letter-spacing: -0.02em;
