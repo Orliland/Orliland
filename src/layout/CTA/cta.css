@@ -1,0 +1,44 @@
+.cta {
+  background-color: var(--texts);
+  border: none;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.person__info {
+  max-width: 30rem;
+}
+
+@media (min-width: 550px) {
+  .cta {
+    padding: 4rem;
+  }
+
+  .person {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.person__image {
+  width: 11.5rem;
+  height: 11.5rem;
+  border-radius: 50%;
+}
+
+.person__name {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.person__title {
+  margin: 1.5rem 0 0;
+
+  color: var(--white);
+}
