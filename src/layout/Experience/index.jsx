@@ -1,6 +1,13 @@
 import "./experience.css";
 
-const positions = [];
+const positions = [
+  // {
+  //   year: "range of dates",
+  //   company: "company name",
+  //   position: "job title",
+  //   description: "descripition of the work",
+  // },
+];
 
 const Position = ({ year, company, position, description }) => {
   return (
