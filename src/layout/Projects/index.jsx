@@ -1,6 +1,13 @@
 import "./projects.css";
 
-const projects = [];
+const projects = [
+  // {
+  //   title: "project titile",
+  //   description: "project description",
+  //   route: "project route",
+  //   coverImage: "project url",
+  // },
+];
 
 const Project = ({ title, description, route, coverImage }) => {
   return (
