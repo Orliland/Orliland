@@ -1,0 +1,29 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.position {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.position__year {
+  opacity: 0.7;
+}
+
+.position__company {
+  margin: 0 0 0.2rem;
+}
+
+.position__position {
+  opacity: 0.5;
+}
+
+@media (min-width: 550px) {
+  .position {
+    grid-template-columns: auto 33rem;
+  }
+}

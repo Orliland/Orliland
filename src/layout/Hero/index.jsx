@@ -25,7 +25,7 @@ function Hero() {
         </div>
       </div>
       <div className="hero__description">
-        <h2 className="hero__description-subtitle subtitle">ABOUT</h2>
+        <h2 className="subtitle">ABOUT</h2>
         <h1 className="hero__description-title heading1">
           Software Engineer & Systems Innovator
         </h1>
