@@ -38,3 +38,36 @@
 
   color: var(--white);
 }
+
+.cta__socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .cta__socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.cta__social {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+}
+
+.cta__link {
+  color: var(--white);
+  opacity: 1;
+  text-decoration: none;
+}
+
+.cta__link:hover {
+  text-decoration: underline;
+}

@@ -17,6 +17,46 @@ function CTA() {
         </div>
       </div>
       <Button href="mailto:hello@orli.land">Get in Touch</Button>
+      {/* TODO: Become social links into components and pass as list items */}
+      <ul className="cta__socials">
+        <li className="cta__social">
+          <a
+            href="https://github.com/orliland/"
+            target="_blank"
+            className="cta__link body"
+          >
+            Github
+          </a>
+        </li>
+        <li className="cta__social">
+          <a
+            href="https://linkedin.com/in/orliland/"
+            target="_blank"
+            className="cta__link body"
+          >
+            Linkedin
+          </a>
+        </li>
+        <li className="cta__social">
+          <a
+            href="https://threads.com/orliland/"
+            target="_blank"
+            className="cta__link body"
+          >
+            Threads
+          </a>
+        </li>
+
+        <li className="cta__social">
+          <a
+            href="https://orli.land/Orlando_Verdin_Resume.pdf"
+            target="_blank"
+            className="cta__link body"
+          >
+            Resume
+          </a>
+        </li>
+      </ul>
     </section>
   );
 }
