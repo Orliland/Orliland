@@ -1,6 +1,6 @@
-.app {
+/* .app {
   padding: 1rem;
-}
+} */
 
 .app--wrapper {
   display: flex;
@@ -16,4 +16,13 @@
   background-color: var(--section-background2-bottom);
   border: 0.1rem solid var(--section-border);
   border-radius: 2rem;
+}
+
+.footer__text {
+  margin: 3rem 0 3rem;
+  text-align: center;
+}
+
+.footer__text a {
+  color: inherit;
 }
