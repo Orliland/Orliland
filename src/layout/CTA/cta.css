@@ -12,10 +12,6 @@
 }
 
 @media (min-width: 550px) {
-  .cta {
-    padding: 4rem;
-  }
-
   .person {
     flex-direction: row;
     text-align: left;

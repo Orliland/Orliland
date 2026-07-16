@@ -1,12 +1,34 @@
 import "./experience.css";
 
 const positions = [
-  // {
-  //   year: "range of dates",
-  //   company: "company name",
-  //   position: "job title",
-  //   description: "descripition of the work",
-  // },
+  {
+    year: "2024 – Present",
+    company: "TechNova Solutions",
+    position: "Software Engineer",
+    description:
+      "Developed scalable web applications using React, Node.js, and TypeScript. Designed REST APIs, optimized database performance, and collaborated with cross-functional teams to deliver high-quality software.",
+  },
+  {
+    year: "2022 – 2024",
+    company: "CloudPeak Technologies",
+    position: "Full Stack Developer",
+    description:
+      "Built and maintained full-stack applications with React, Express, and PostgreSQL. Implemented authentication, improved application performance, and participated in code reviews and Agile development.",
+  },
+  {
+    year: "2021 – 2022",
+    company: "ByteWorks Inc.",
+    position: "Frontend Developer",
+    description:
+      "Created responsive and accessible user interfaces using React, JavaScript, and Tailwind CSS. Worked closely with designers to deliver intuitive user experiences and reusable UI components.",
+  },
+  {
+    year: "2020 – 2021",
+    company: "NextGen Software",
+    position: "Junior Software Engineer",
+    description:
+      "Contributed to the development of internal business applications using JavaScript and Node.js. Fixed bugs, implemented new features, wrote unit tests, and collaborated with senior engineers to improve code quality.",
+  },
 ];
 
 const Position = ({ year, company, position, description }) => {

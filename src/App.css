@@ -18,6 +18,16 @@
   border-radius: 2rem;
 }
 
+@media (min-width: 550px) {
+  .section {
+    padding: 4rem;
+  }
+
+  .app--wrapper {
+    gap: 2rem;
+  }
+}
+
 .footer__text {
   margin: 3rem 0 3rem;
   text-align: center;
