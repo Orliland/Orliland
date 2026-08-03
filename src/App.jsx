@@ -20,7 +20,7 @@ function App() {
           <a href="https://joyfolio.framer.website/" target="_blank">
             Unroot.design
           </a>
-          . Designed and coded by Orlando Verdin.
+          . Coded by Orlando Verdin.
         </p>
       </footer>
     </main>
