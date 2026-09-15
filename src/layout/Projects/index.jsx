@@ -2,12 +2,12 @@ import "./projects.css";
 
 const projects = [
   {
-    title: "TaskFlow",
+    title: "Verdin Handyman Services",
     description:
-      "A modern project management platform that helps teams organize tasks, track progress, and collaborate in real time with an intuitive dashboard.",
-    route: "/projects/taskflow",
+      "Verdin Handyman Services is a website I designed and developed for a family-owned home improvement business in San Diego. The project focuses on presenting the company's services, showcasing completed work, and providing a simple way for potential clients to request a free quote.",
+    route: "/projects/verdin-services",
     coverImage:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+      "/project_verdin_services.webp",
   },
 
 
