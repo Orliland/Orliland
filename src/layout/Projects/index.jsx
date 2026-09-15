@@ -9,22 +9,8 @@ const projects = [
     coverImage:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
   },
-  {
-    title: "Finance Tracker",
-    description:
-      "A personal finance application for managing budgets, tracking expenses, and visualizing spending trends through interactive charts and reports.",
-    route: "/projects/finance-tracker",
-    coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "DevPortfolio",
-    description:
-      "A responsive developer portfolio built to showcase projects, technical skills, and professional experience with a clean and accessible user interface.",
-    route: "/projects/devportfolio",
-    coverImage:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-  },
+
+
 ];
 
 const Project = ({ title, description, route, coverImage }) => {

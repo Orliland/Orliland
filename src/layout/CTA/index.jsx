@@ -2,13 +2,15 @@ import "./cta.css";
 
 import Button from "../../components/Button";
 
+import ProfileImage from '../../assets/profile.webp'
+
 function CTA() {
   return (
     <section className="section cta">
       <div className="person">
         <img
           className="person__image"
-          src="https://placehold.co/400"
+          src={ProfileImage}
           alt="Orlando Verdin Photo"
         />
         <div className="person__info">

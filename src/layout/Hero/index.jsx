@@ -2,6 +2,8 @@ import "./hero.css";
 
 import Skills from "../../components/Skills";
 
+import ProfileImage from '../../assets/profile.webp'
+
 function Hero() {
   const skills = [
     "Full-Stack Development",
@@ -15,7 +17,7 @@ function Hero() {
     <section className="hero section">
       <div className="hero__profile">
         <img
-          src="https://placehold.co/400"
+          src={ProfileImage}
           alt="Orlando Verdin Photo"
           className="hero__image"
         />

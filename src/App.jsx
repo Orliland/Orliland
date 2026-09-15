@@ -14,15 +14,7 @@ function App() {
         <Experience />
         <CTA />
       </div>
-      <footer className="footer">
-        <p className="footer__text body">
-          UI inspired by{" "}
-          <a href="https://joyfolio.framer.website/" target="_blank">
-            Unroot.design
-          </a>
-          . Coded by Orlando Verdin.
-        </p>
-      </footer>
+
     </main>
   );
 }
