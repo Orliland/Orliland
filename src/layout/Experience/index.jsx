@@ -6,7 +6,7 @@ const positions = [
     company: "Freenlacer",
     position: "Software Engineer",
     description:
-      "Developed scalable web applications using React, Node.js, and TypeScript. Designed REST APIs, optimized database performance, and collaborated with cross-functional teams to deliver high-quality software.",
+      "Developed scalable web applications using React, Node.js, and TypeScript. Designed REST APIs, optimized database performance to deliver high-quality software.",
   },
 ];
 
